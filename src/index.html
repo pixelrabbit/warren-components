@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/warrens.esm.js"></script>
+    <script nomodule src="/build/warrens.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/build/warrens.css" />
+  </head>
+  <body>
+    <div class="container">
+      <bcn-button>Button content</bcn-button>
+      <bcn-button variant="secondary">Second button</bcn-button>
+      <hr />
+      <bcn-card></bcn-card>
+      <hr />
+
+      
+      <bcn-deck></bcn-deck>
+      <script>
+        const deck = document.querySelector('bcn-deck');
+        deck.cards = [{
+          title: "First",
+          body: "lorem ipsum"
+        },{
+          title: "Second",
+          body: "lorem ipsum"
+        },{
+          title: "Third",
+          body: "lorem ipsum"
+        }];
+      </script>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+:root {
+    --color-primary: #037dae;
+    --color-primary-hover: #000066;
+    --color-white: #fff;
+
+    --space-unit: 16px;
+    --space-xxs:  calc(0.25 * var(--space-unit));
+    --space-xs:   calc(0.5 * var(--space-unit)); 
+    --space-sm:   calc(0.75 * var(--space-unit)); 
+    --space-md:   calc(1.25 * var(--space-unit)); 
+    --space-lg:   calc(2 * var(--space-unit));  
+    --space-xl:   calc(3.25 * var(--space-unit));
+    --space-xxl:  calc(5.25 * var(--space-unit));
+}
+
+body {
+    font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
+    font-size: 16px;
+}
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
